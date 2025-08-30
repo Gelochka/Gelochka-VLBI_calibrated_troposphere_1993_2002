@@ -1,4 +1,4 @@
-# VLBI_calibrated_troposphere_1993_2002
+# VLBI_calibrated_troposphere_1993_2007
    
 
 Here are presented the files with already self-calibrated troposphere and clock for VLBI experiment from 1993 to 2002. Troposphere parameters and clock offset
