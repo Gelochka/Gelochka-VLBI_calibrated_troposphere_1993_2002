@@ -12,8 +12,8 @@ Each arcive containts following files:
 3) ***.txt**: ngs-file  with troposphere calibation. New NGS file contains wet troposphere delay and
 gradients and clock offset (ns).
 4) **collocat.opt**: This file contains a list of all stations.
-5) **baseline.eli** If exists, contains baselines that needs to be cut out from the observations.
-6) **breaks.res**  If exists, contains  clock breaks on stations.
+5) **baseline.eli**: If exists, contains baselines that needs to be cut out from the observations.
+6) **breaks.res**:  If exists, contains  clock breaks on stations.
 
 #  Example of *.txt file structure:
 Below is an example of a block from  *.txt file. 
