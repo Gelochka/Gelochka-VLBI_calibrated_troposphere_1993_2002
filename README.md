@@ -15,11 +15,12 @@ gradients and clock offset (ns)
 5) **baseline.eli** If exists, contains the base that needs to be cut out from the observations.
 6) **breaks.res**  clock breaks
 
-#  Example of .txt file structure:
+#  Example of *.txt file structure:
 Below is an example of a block from  *.txt file. 
 
 In 504 line there are troposphere for the 1st  ‭(HART15M) and 2nd  ‭( MATERA) station, north-south gradient for stations 1st and 2nd, 
-east-west gradient for stations 1st and 2nd, 
+east-west gradient for stations 1st and 2nd, clock offset.
+
 <pre>  HART15M   MATERA    0454-234 2020 03 09 17 00  10.0000000000                 501                
    11236439.13979774   0.01029  -258978.2003969568   0.08722 0      I        502                
    0.00174    .00000    .00000    .00000   2.183861602369427       0.0       503  
@@ -27,21 +28,24 @@ east-west gradient for stations 1st and 2nd,
    0.00000   0.10605    .00000    .00000    .00000    .00000                 505                
     21.800     7.704   863.006   953.000    61.389    66.773 0 0   </pre>  
 
+All you need now is subtract  troposphere and clock parameters (line 504) and process exepriment using the standard least squares method.
 # How to downoald all files?
 
 
 1) Using *git* via terminal / command line.
-   
  Installation on Linux (Ubuntu):
-
 Open terminal and run:
 
 ```bash
 sudo apt update
 sudo apt install git
-git clone https://github.com/Gelochka/VLBI_calibrated_troposphere_2018_2025.git
+git clone https://github.com/Gelochka/VLBI_calibrated_troposphere_1993_2002.git
 ```
-
+To Unzip all archives: 
+```bash
+cd VLBI_calibrated_troposphere_2018_2025
+find . -type f -name '*.zip' | while read f; do unzip -d "${f%.*}" "$f"; done
+```
  Installation on Windows:
 Install git on Windows: https://github.com/git-for-windows/git/releases/tag/v2.51.0.windows.1
  
