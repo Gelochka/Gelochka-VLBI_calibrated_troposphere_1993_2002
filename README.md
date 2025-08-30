@@ -30,10 +30,11 @@ east-west gradient for stations 1st and 2nd, clock offset.
 
 All you need now is subtract  troposphere and clock parameters (line 504) and process experiment using the standard least squares method.
 # How to downoald all files?
+ You can download individual experiments by cliking on zip-archive and download row file.
 
-You can download individual experiments by cliking on zip-archive and download row file.
+1)  Just click the green **Code** button at the top right, then select **Download ZIP**.
 
-1) Using *git* via terminal / command line.
+2) Using *git* via terminal / command line.
 
 **Installation on Linux (Ubuntu):**
 
