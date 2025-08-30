@@ -39,7 +39,7 @@ Open terminal and run:
 ```bash
 sudo apt update
 sudo apt install git
-git clone https://github.com/Gelochka/VLBI_calibrated_troposphere_1993_2002.git
+git clone https://github.com/Gelochka/VLBI_calibrated_troposphere_1993_2007.git
 ```
 To Unzip all archives: 
 ```bash
