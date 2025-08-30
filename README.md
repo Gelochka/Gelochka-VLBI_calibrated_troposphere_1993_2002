@@ -28,7 +28,7 @@ east-west gradient for stations 1st and 2nd, clock offset.
    0.00000   0.10605    .00000    .00000    .00000    .00000                 505                
     21.800     7.704   863.006   953.000    61.389    66.773 0 0             506 </pre>  
 
-All you need now is subtract  troposphere and clock parameters (line 504) and process exepriment using the standard least squares method.
+All you need now is subtract  troposphere and clock parameters (line 504) and process experiment using the standard least squares method.
 # How to downoald all files?
 
 You can download individual experiments by cliking on zip-archive and download row file.
