@@ -43,8 +43,8 @@ git clone https://github.com/Gelochka/VLBI_calibrated_troposphere_1993_2007.git
 ```
 To Unzip all archives: 
 ```bash
-cd VLBI_calibrated_troposphere_2018_2025
-find . -type f -name '*.zip' | while read f; do unzip -d "${f%.*}" "$f"; done
+cd VLBI_calibrated_troposphere_1993_2007
+find . -type f -name '*.zip' | while read f; do unzip "$f" -d "$(dirname "$f")"; done
 ```
  Installation on Windows:
 Install git on Windows: https://github.com/git-for-windows/git/releases/tag/v2.51.0.windows.1
